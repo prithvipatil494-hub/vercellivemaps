@@ -1,0 +1,13 @@
+{
+  "name": "live-location-tracker",
+  "version": "1.0.0",
+  "description": "Real-time location sharing and tracking application",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server .",
+    "start": "npx http-server ."
+  },
+  "keywords": ["location", "tracking", "geolocation"],
+  "author": "",
+  "license": "ISC"
+}
