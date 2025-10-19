@@ -1,20 +1,15 @@
 {
-  "buildCommand": "echo 'No build needed'",
+  "buildCommand": "echo 'Static site'",
   "outputDirectory": ".",
-  "cleanUrls": true,
-  "headers": [
+  "cleanUrls": false,
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, PUT, DELETE, OPTIONS"
-        }
-      ]
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
